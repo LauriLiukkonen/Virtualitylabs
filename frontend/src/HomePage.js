@@ -11,7 +11,7 @@ const HomePage = () => {
   const [visibleIndexes, setVisibleIndexes] = useState([0, 1, 2]); // Alkuarvo asetettu esimerkin vuoksi
 
   useEffect(() => {
-    axios.get('https://virtualitylabs-xz7m.vercel.app/api/images')
+    axios.get('https://virtualitylabs-server.vercel.app/api/images')
       .then(response => {
         setImages(response.data);
       })
